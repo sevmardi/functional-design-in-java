@@ -1,2 +1,2 @@
-# functional-design-in-java
+# streams.School-design-in-java
 Functional design in Java
