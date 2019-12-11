@@ -14,16 +14,19 @@ public class Student {
 
     }
 
-    public Student(String name, double gpa, String ... courses) {
+    public static Student of(String name, double gpa, String... courses) {
         Student self = new Student();
 
         self.name = name;
         self.gpa = gpa;
         self.courses = Arrays.asList(courses);
+
+        return self;
     }
 
-    public static StudentCriterion getSmartCriterion(double v) {
-        return v;
+    public static StudentCriterion getSmartCriterion(/*final */double threshold) {
+//    threshold++;
+        return s -> s.gpa > threshold;
     }
 
     public String getName() {
@@ -46,8 +49,6 @@ public class Student {
                 ", courses=" + courses +
                 '}';
     }
-
-
 
 }
 
