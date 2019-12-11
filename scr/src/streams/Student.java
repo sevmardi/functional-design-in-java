@@ -22,6 +22,10 @@ public class Student {
         self.courses = Arrays.asList(courses);
     }
 
+    public static StudentCriterion getSmartCriterion(double v) {
+        return v;
+    }
+
     public String getName() {
         return name;
     }
