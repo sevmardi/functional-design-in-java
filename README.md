@@ -1,2 +1,2 @@
 # Java function design
-Functional design in Java course on O
+Functional design in Java course on O'reilly
